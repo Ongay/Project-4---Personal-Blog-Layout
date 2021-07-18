@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gugi&family=Hind:wght@300;400;500&family=Montserrat&family=Mrs+Saint+Delafield&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/153f6589a7.js" crossorigin="anonymous"></script>
+    <script src="javascript/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header__wrap fixed-width">
+
+            <div class="header__burgermenu">
+                <!-- Menu-icon -->
+
+                <div id="menu-toggle" class="menu-icon">
+                    <div class="menu-icon-line"></div>
+                </div>
+
+                <!-- Mobile navigation -->
+
+                <div id="mobile-nav" class="mobile-nav">
+                    <div class="logo"><span>Deco</span>blog</div>
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a href="#"><span>Home</span></a></li>
+                        <li class="mobile-nav__item"><a href="#"><span>About</span></a></li>
+                        <li class="mobile-nav__item"><a href="#"><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo"><span>Deco</span>blog</div>
+
+            <div class="socials">
+                <ul class="socials__list">
+                    <li class="socials__item">
+                        <i class="fas fa-rss"></i>
+                    </li>
+                    <li class="socials__item">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li class="socials__item">
+                        <i class="fab fa-tumblr"></i>
+                    </li>
+                    <li class="socials__item">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li class="socials__item">
+                        <form class="socials__search_box" action="#">
+                            <input class="search__txt" type="search" placeholder="Type to search">
+                            <a href="#" class="search__btn">
+                                <i class="fas fa-search"></i>
+                            </a>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="top__slide_container">
+            <div class="top__slide fixed-width">
+                <div class="top__images_wrap">
+                    <!-- <img id="slide__image_1" src="images/1.jpg" alt="some image" data-x="1"> -->
+                </div>
+                <div class="top__slider">
+                    <div class="top__slider_btns">
+                        <input name="slider__btn" id="slider__btn_1" class="slider__btn" type="radio" data-x="1"
+                            checked>
+                        <label for="slider__btn_1" class="top__slider_btn" data-x="1"
+                            onclick="changeImg(event)"></label>
+
+                        <input name="slider__btn" id="slider__btn_2" class="slider__btn" type="radio" data-x="2">
+                        <label for="slider__btn_2" class="top__slider_btn" data-x="2"
+                            onclick="changeImg(event)"></label>
+
+                        <input name="slider__btn" id="slider__btn_3" class="slider__btn" type="radio" data-x="3">
+                        <label for="slider__btn_3" class="top__slider_btn" data-x="3"
+                            onclick="changeImg(event)"></label>
+                    </div>
+                    <div class="top__slider_arrows">
+                        <div class="slider_wrap">
+                            <div class="top__slider_left" onclick="slideLeft()"></div>
+                        </div>
+
+                        <span>Featured article</span>
+
+                        <div class="slider_wrap">
+                            <div class="top__slider_right" onclick="slideRight()"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup__container fixed-width">
+            <form action="#" class="signup__form">
+                <h3 class="signup__form_header">signup to newsletter</h3>
+                <input class="signup__form_input" type="text" placeholder="Your name">
+                <input class="signup__form_input" type="text" placeholder="your e-mail address">
+                <input class="signup__form_submit" type="submit" value="subscribe now">
+            </form>
+        </div>
+
+        <div class="articles__container fixed-width">
+            <div class="articles__columns">
+                <article class="article__post">
+                    <div class="article__post_text">
+                        <div class="article__post_icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <p class="article__font">travelling</p>
+                        <h3 class="article__heading">Travel best adventure</h3>
+                        <p class="article__font">january 26, 2021</p>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                            nesciunt
+                            reprehenderit atque commodi voluptate reiciendis. Modi voluptatibus eum voluptate rerum
+                            totam!
+                            At neque, suscipit fugiat laboriosam tempora fugit eum totam.
+                        </p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article__socials">
+                        <div class="article__socials_comments">
+                            <i class="far fa-comments"></i>
+                            <span class="article__comment">no comment</span>
+                        </div>
+                        <ul class="article__socials_icons">
+                            <li class="article__socials_icon">
+                                <i class="fas fa-rss"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-tumblr"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article__post post__empty">
+                    <h3>Your advertising could be here</h3>
+                </article>
+
+                <article class="article__post post__traveling">
+                    <div class="article__post_text">
+                        <p class="article__font">travelling</p>
+                        <h3 class="article__heading">Travel best adventure</h3>
+                        <p class="article__font">january 26, 2021</p>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                            nesciunt
+                            reprehenderit atque commodi voluptate reiciendis. Modi voluptatibus eum voluptate rerum
+                            totam!
+                            At neque, suscipit fugiat laboriosam tempora fugit eum totam.
+                        </p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="articles__columns">
+                <article class="article__post">
+                    <div class="article__post_image">
+                        <img src="https://via.placeholder.com/150" alt="image">
+                    </div>
+                    <div class="article__post_text">
+                        <div class="article__post_icon post_icon_image">
+                            <i class="far fa-image"></i>
+                        </div>
+                        <p class="article__font">travelling</p>
+                        <h3 class="article__heading">Standar image post</h3>
+                        <p class="article__font">january 26, 2021</p>
+                        <p class="article__text"></p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article__socials">
+                        <div class="article__socials_comments">
+                            <i class="far fa-comments"></i>
+                            <span class="article__comment">6 comments</span>
+                        </div>
+                        <ul class="article__socials_icons">
+                            <li class="article__socials_icon">
+                                <i class="fas fa-rss"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-tumblr"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article__post post__blacktext">
+                    <h3>Your advertising could be here</h3>
+                    <div class="article__post_blacktext">
+                        <div class="article__post_icon post_icon_quotes">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nemo
+                            numquam excepturi illo deserunt quibusdam, autem eum! Sunt voluptatum eum tenetur eos eius
+                            blanditiis quisquam necessitatibus, vitae est at delectus!
+                        </p>
+                        <p class="article__font">Nathalia Alexy</p>
+                    </div>
+                </article>
+
+                <article class="article__post">
+                    <div class="article__post_video">
+                        <div class="article__post_icon video__icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <video class="post__video" src="images/video.mp4" controls autoplay muted loop></video>
+                    </div>
+                    <div class="article__post_text">
+                        <p class="article__font">designer</p>
+                        <h3 class="article__heading">Video image post</h3>
+                        <p class="article__font">january 26, 2021</p>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article__socials">
+                        <div class="article__socials_comments">
+                            <i class="far fa-comments"></i>
+                            <span class="article__comment">no comment</span>
+                        </div>
+                        <ul class="article__socials_icons">
+                            <li class="article__socials_icon">
+                                <i class="fas fa-rss"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-tumblr"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <div class="articles__columns">
+                <article class="article__post">
+                    <div class="article__post_text">
+                        <div class="article__post_icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <p class="article__font">fashion</p>
+                        <h3 class="article__heading">simple post style</h3>
+                        <p class="article__font">january 02, 2021</p>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                            nesciunt reprehenderit atque commodi voluptate reiciendis.
+                        </p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article__socials">
+                        <div class="article__socials_comments">
+                            <i class="far fa-comments"></i>
+                            <span class="article__comment">no comment</span>
+                        </div>
+                        <ul class="article__socials_icons">
+                            <li class="article__socials_icon">
+                                <i class="fas fa-rss"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-tumblr"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article__post">
+                    <div class="article__post_image">
+                        <img src="https://via.placeholder.com/150" alt="image">
+                    </div>
+                    <div class="article__post_text">
+                        <div class="article__post_icon post_icon_image">
+                            <i class="far fa-image"></i>
+                        </div>
+                        <p class="article__font">adventure</p>
+                        <h3 class="article__heading">awesome gallery post</h3>
+                        <p class="article__font">january 19, 2021</p>
+                        <p class="article__text"></p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article__socials">
+                        <div class="article__socials_comments">
+                            <i class="far fa-comments"></i>
+                            <span class="article__comment">2 comments</span>
+                        </div>
+                        <ul class="article__socials_icons">
+                            <li class="article__socials_icon">
+                                <i class="fas fa-rss"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-tumblr"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article__post post__blacktext">
+                    <h3>Your advertising could be here</h3>
+                    <div class="article__post_blacktext">
+                        <div class="article__post_icon post_icon_quotes">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <p class="article__text">
+                            <a href="https://www.google.com">https://abcdomainname.com/screen/discovery</a>
+                        </p>
+                        <p class="article__font">Nathalia Alexy</p>
+                    </div>
+                </article>
+
+                <article class="article__post post__blacktext">
+                    <h3>Your advertising could be here</h3>
+                    <div class="article__post_blacktext post__blackcube">
+                        <div class="article__post_icon post_icon_quotes">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <p class="article__text"> </p>
+                        <p class="article__font"></p>
+                    </div>
+                </article>
+            </div>
+            <div class="articles__columns">
+                <article class="article__post post__empty">
+                    <h3>Your advertising could be here</h3>
+                </article>
+
+                <article class="article__post">
+                    <div class="article__post_text">
+                        <div class="article__post_icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <p class="article__font">lifestyle</p>
+                        <h3 class="article__heading">Without image post</h3>
+                        <p class="article__font">january 07, 2021</p>
+                        <p class="article__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+                            nesciunt
+                            reprehenderit atque commodi voluptate reiciendis. Modi voluptatibus eum voluptate rerum
+                            totam!
+                            At neque, suscipit fugiat laboriosam tempora fugit eum totam.
+                        </p>
+                        <div class="article__anchor_wrap">
+                            <a href="#" class="article__anchor">
+                                read more
+                            </a>
+                        </div>
+                    </div>
+                    <div class="article__socials">
+                        <div class="article__socials_comments">
+                            <i class="far fa-comments"></i>
+                            <span class="article__comment">no comment</span>
+                        </div>
+                        <ul class="article__socials_icons">
+                            <li class="article__socials_icon">
+                                <i class="fas fa-rss"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-tumblr"></i>
+                            </li>
+                            <li class="article__socials_icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="article__post">
+                    <div class="article__post_text">
+                        <div class="article__post_icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <p class="article__font">audio music</p>
+                        <h3 class="article__heading">best audio player post</h3>
+                        <p class="article__font">december 29, 2015</p>
+                        <div class="article__post_circle">
+                            <div class="post__circle"></div>
+                        </div>
+                        <p class="article__text"> </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer__container fixed-width">
+            <div class="footer__block">
+                <h4 class="footer__block_header">about blog</h4>
+                <p class="footer__block_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est possimus
+                    quos a.
+                </p>
+                <div class="footer__block_wrapper">
+                    <p>Kuanyshov Onai</p>
+                </div>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__block_header">latest tweets</h4>
+                <div class="footer__block_tweet">
+                    <a href="#" class="block__tweet footer__block_text">
+                        <i class="fab fa-twitter"></i>
+                        @Twitter@magicalrebekah
+                    </a>
+                    <p class="footer__block_text block__tweet_text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Optio,
+                        sapiente.</p>
+                </div>
+                <div class="footer__block_tweet">
+                    <a href="#" class="block__tweet footer__block_text">
+                        <i class="fab fa-twitter"></i>
+                        @Twitter@magicalrebekah
+                    </a>
+                    <p class="footer__block_text block__tweet_text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Optio,
+                        sapiente.</p>
+                </div>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__block_header">follow me instagram</h4>
+                <div class="instagram__photos">
+                    <div class="instagram__photo_wrap">
+                        <div class="instagram__photo"></div>
+                        <div class="instagram__photo"></div>
+                        <div class="instagram__photo"></div>
+                    </div>
+                    <div class="instagram__photo_wrap">
+                        <div class="instagram__photo"></div>
+                        <div class="instagram__photo"></div>
+                        <div class="instagram__photo"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__block">
+                <h4 class="footer__block_header">latest comment</h4>
+                <div class="footer__block_comment_wrap">
+                    <div class="blockk__comment">
+                        <p class="footer__block_text block__comment_author">From Alex:</p>
+                        <p class="footer__block_text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="block__comment_line"></div>
+                    <div class="blockk__comment">
+                        <p class="footer__block_text block__comment_author">From Jhon Doe:</p>
+                        <p class="footer__block_text">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

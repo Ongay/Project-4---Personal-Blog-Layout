@@ -1,0 +1,24 @@
+<svg id="Blog_Icon" data-name="Blog Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="40" viewBox="0 0 45 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #212121;
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="0" y="0" width="45" height="40" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.5" dy="0.866" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.732"/>
+      <feFlood result="flood" flood-color="#d5d5d5" flood-opacity="0.75"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="bg" class="cls-1" x="1" y="1" width="40" height="35"/>
+  <path id="Icon" class="cls-2" d="M235.941,807.67l3.252,3.27-8.232,8.279-3.25-3.27Zm5.72-.789-1.451-1.459a1.433,1.433,0,0,0-2.033,0l-1.389,1.4,3.252,3.271,1.621-1.63A1.12,1.12,0,0,0,241.661,806.881Zm-15.652,13.665a0.371,0.371,0,0,0,.448.443l3.624-.884-3.251-3.271Z" transform="translate(-213 -794)"/>
+</svg>
